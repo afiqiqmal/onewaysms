@@ -19,10 +19,10 @@ class OneWaySmsChannel
     /**
      * Send the given notification.
      *
+     * @return array<int, string>|null the MT IDs, or null when the notifiable
+     *                                 has no OneWaySMS route
      *
      * @throws CouldNotSendNotification
-     * @return array<int, string>|null  the MT IDs, or null when the notifiable
-     *                                  has no OneWaySMS route
      */
     public function send(mixed $notifiable, Notification $notification): ?array
     {

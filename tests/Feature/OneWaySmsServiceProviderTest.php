@@ -13,7 +13,7 @@ use NotificationChannels\OneWaySms\OneWaySmsChannel;
  * Bind a mocked HttpClient into the container. $history is populated, by
  * reference, with the requests the resolved OneWaySmsApi issues.
  *
- * @param array<int, mixed> $history
+ * @param  array<int, mixed>  $history
  */
 function bindMockedHttpClient(array &$history): void
 {
