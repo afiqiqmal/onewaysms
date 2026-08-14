@@ -25,10 +25,10 @@ class OneWaySmsApi
     /**
      * Send one MT request.
      *
-     * @param  array{to: string, sender: string, languagetype: int, message: string}  $message
-     * @return array<int, string> one MT ID per recipient
+     * @param array{to: string, sender: string, languagetype: int, message: string} $message
      *
      * @throws CouldNotSendNotification
+     * @return array<int, string>       one MT ID per recipient
      */
     public function send(array $message): array
     {
@@ -85,7 +85,7 @@ class OneWaySmsApi
     /**
      * Issue a request and return the trimmed plain-text body.
      *
-     * @param  array<string, mixed>  $query
+     * @param array<string, mixed> $query
      *
      * @throws CouldNotSendNotification
      */

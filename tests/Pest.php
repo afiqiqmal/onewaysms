@@ -12,8 +12,8 @@ uses(TestCase::class)->in(__DIR__);
 /**
  * Build an API client backed by a queue of canned Guzzle responses.
  *
- * @param  array<int, mixed>  $queue
- * @param  array<int, mixed>  $history  populated with the requests that were sent
+ * @param array<int, mixed> $queue
+ * @param array<int, mixed> $history populated with the requests that were sent
  */
 function oneWaySmsApi(array $queue, array &$history = []): OneWaySmsApi
 {

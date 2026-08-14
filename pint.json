@@ -1,0 +1,8 @@
+{
+    "preset": "laravel",
+    "rules": {
+        "phpdoc_align": {"align": "vertical"},
+        "phpdoc_order": {"order": ["param", "throws", "return"]},
+        "phpdoc_separation": false
+    }
+}
